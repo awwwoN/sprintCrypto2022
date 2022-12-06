@@ -85,7 +85,19 @@ Bien le bonjour cher lecteur ! Mon nom est Zuriel et tu t'apprêtes à lire ma f
 
 ![Britney !](./ressources/britney.jpg)
 
+Mon **Vingt-deuxième Token** était dans l'entête de l'image codé en base64
+
 ## Chapitre 3 - Mise sur écoute - Mardi 8H00
 
 `8h00 -` C'est parti pour cette deuxième journée d'enquête pour retrouvé Alice. Eve nous a trouvé des éléments contenu dans le cloud d'Alice.
 Du contenu y était stocké avec une langue incompréhensible que l'on s'est empressé d'attaquer
+
+`12h30 -` Les messages runiques m'ont donné beaucoup de mal... Oh une bandelette par terre avec une ligne en base32. **Vingt-troisième Token** trouvé !
+
+`13h30 -` Enfin ! J'ai enfin réussi à déchiffrer de charabia, les pays nordiques, plus jamais ! J'obtiens mon **Vingt-quatrième Token** !
+
+`15h00 -` En retournant sur les messages d'Alice et Bob d'hier, j'obtiens un **Vingt-cinquième** et dernier **Token**.
+
+
+
+

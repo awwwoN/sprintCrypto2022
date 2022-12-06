@@ -1,0 +1,21 @@
+Cher Bob,
+
+CALOSOMA 4217 m'ont recontacté. Le test se poursuit. Cette fois-ci c'est un
+document papier qui est arrivé par la poste. Je ne sais pas où ils ont eu mon
+adresse... ça m'inquiète un peu.
+
+J'ai scanné le document comme j'ai pu. Je te l'envoie aussi.
+
+J'ai fait une autre découverte en tournant ça dans tous les sens qui pourra
+t'aider : il y a autre chose dans l'image calosoma.png d'origine ! Autre chose
+que le chunk secret et le QRcode dans les bits de poids faible...
+
+...pour t'en rendre compte, charge l'image avec ta bibliothèque favorite et
+regarde chaque pixel. Tu as 24 bits de couleur dans le triplet (R,G,B). Prends
+cette suite de 24 bits et compte combien il y a de 1 dedans. Si c'est pair,
+met un pixel blanc, sinon met un pixel noir.
+
+Il faut qu'on parle de CALOSOMA ensemble et qu'on décide quoi faire.
+
+À très bientôt,
+Alice
