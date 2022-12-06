@@ -1,0 +1,27 @@
+2022-12-06 11:22:32,526 The Ancient Machine Codex is serving content at http://localhost:6473/
+2022-12-06 11:22:32,526 Launching browser to open http://localhost:6473/instructions
+2022-12-06 11:22:33,122 "GET /instructions HTTP/1.1" 200 -
+2022-12-06 11:22:54,215 Stopping server
+2022-12-06 13:13:48,444 The Ancient Machine Codex is serving content at http://localhost:6473/
+2022-12-06 13:13:48,444 Launching browser to open http://localhost:6473/instructions
+2022-12-06 13:13:49,023 "GET /instructions HTTP/1.1" 200 -
+2022-12-06 13:49:58,758 "GET /2d04de8ae6313e09d61a8857afbef388/calosoma/ HTTP/1.1" 200 -
+2022-12-06 13:49:58,853 "GET /data/2d04de8ae6313e09d61a8857afbef388/calosoma/speaker.png HTTP/1.1" 200 -
+2022-12-06 13:49:58,904 "GET /data/amc.png HTTP/1.1" 200 -
+2022-12-06 13:50:00,564 "GET /2d04de8ae6313e09d61a8857afbef388/calosoma/bureau HTTP/1.1" 200 -
+2022-12-06 13:50:00,643 "GET /data/imageMapResizer.js HTTP/1.1" 200 -
+2022-12-06 13:50:00,688 "GET /data/2d04de8ae6313e09d61a8857afbef388/calosoma/bureau.png HTTP/1.1" 200 -
+2022-12-06 13:50:02,622 "GET /2d04de8ae6313e09d61a8857afbef388/calosoma/livrebis HTTP/1.1" 200 -
+2022-12-06 13:50:02,693 "GET /data/2d04de8ae6313e09d61a8857afbef388/calosoma/indices.png HTTP/1.1" 200 -
+2022-12-06 13:50:06,068 "GET /2d04de8ae6313e09d61a8857afbef388/calosoma/livre HTTP/1.1" 200 -
+2022-12-06 13:50:06,141 "GET /data/2d04de8ae6313e09d61a8857afbef388/calosoma/vernam.png HTTP/1.1" 200 -
+2022-12-06 13:50:06,210 "GET /data/2d04de8ae6313e09d61a8857afbef388/calosoma/lsb.png HTTP/1.1" 200 -
+2022-12-06 13:51:14,798 Stopping server
+2022-12-06 13:51:15,544 The Ancient Machine Codex is serving content at http://localhost:6473/
+2022-12-06 13:51:15,544 Launching browser to open http://localhost:6473/instructions
+2022-12-06 13:51:16,130 "GET /instructions HTTP/1.1" 200 -
+2022-12-06 14:30:45,371 "GET /vers/l/infini/et/audela HTTP/1.1" 200 -
+2022-12-06 14:30:45,517 "GET /data/amc.png HTTP/1.1" 200 -
+2022-12-06 14:30:46,850 "GET /bafcf80223032899cc4dcc34b020b105/multivers/ HTTP/1.1" 200 -
+2022-12-06 14:30:46,941 "GET /data/bafcf80223032899cc4dcc34b020b105/multivers/speaker.png HTTP/1.1" 200 -
+2022-12-06 14:30:48,001 "GET /data/bafcf80223032899cc4dcc34b020b105/multivers/cloud.iso HTTP/1.1" 200 -

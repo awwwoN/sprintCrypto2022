@@ -1,0 +1,33 @@
+*** INDICES, MODE D'EMPLOI ***
+
+Ce répertoire fonctionne comme un dictionnaire dont les entrées seraient
+chiffrées.
+
+Les entrées du dictionnaires, appelées clés, sont toujours données
+en MAJUSCULES, sans accents.
+
+La valeur Y associées à une clé X est insérée dans ce répertoire comme 
+suit :
+  (1) on calcule K = SHA256(X)
+  (2) on dérive K1 = HMAC-SHA256(K,"fichier")
+  (3) on dérive K2 = HMAC-SHA256(K,"donnees")
+  (4) on applique un padding PKCS à Y
+  (5) on chiffre Y à l'aide d'AES-256-CBC avec la clé K2 et l'IV
+      43414b4543414b4543414b4543414b45 et on le place dans un fichier
+  (6) on nomme le fichier hex(K1)
+
+Ainsi pour la valeur "THE CAKE IS A LIE" associée à la clé "CAKE" on 
+obtient :
+  (1) K = 8c38b376fdf45f4a7ca56a6b1062add530646a45ec959d059b1777edf00a37a5
+  (2) K1 = cbe21f6768ebaecdfc10e136231e9b4ccd4331fb58a64bc14124e25b6595fe15
+  (3) K2 = 90e68e14a9d7de7650e7db227fff797d8b98e7d0e915caf13ee4047cf1132653
+  (4) Y' = "THE CAKE IS A LIE\x0f\x0f\x0f\x0f\x0f\x0f\x0f\x0f\x0f\x0f\x0f\x0f\x0f\x0f\x0f"
+  (5) AES-256-CBC(K2,Y',IV) = 8b1dc60decef1df0f52759df19265b1d9f93af3219520e6682ea8545860fc471
+
+Vérifiez que le fichier 
+cbe21f6768ebaecdfc10e136231e9b4ccd4331fb58a64bc14124e25b6595fe15 contient
+bien 8b1dc60decef1df0f52759df19265b1d9f93af3219520e6682ea8545860fc471 :
+$ hexdump -C cbe21f6768ebaecdfc10e136231e9b4ccd4331fb58a64bc14124e25b6595fe15
+
+Lorsque vous cherchez un indice à partir de sa clé, il suffit donc
+d'appliquer la recette à l'envers !

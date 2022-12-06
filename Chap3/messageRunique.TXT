@@ -1,0 +1,3 @@
+Le premier flux est chiffrÃ© avec la primitive de chiffrement symÃ©trique
+Salsa20. La clÃ© utilisÃ©e est SHA256(RIRRNGPTCDLUNSOAGNBGCMRA) et le
+i/nce est CALOSOMA.

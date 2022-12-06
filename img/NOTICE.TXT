@@ -1,0 +1,49 @@
+Bonjour à tous,
+
+Comme vous le savez, le renforcement de la loi sur la protection des données
+personnelles nous oblige, dans le cadre de la RGPD, à renforcer nos méthodes
+d'accès aux services de notre agence.
+
+Aussi, à compter du 1er janvier 2020, nous mettons en place progressivement
+une authentification multi-facteurs.
+
+Chaque membre du personnel recevra en main propre trois éléments
+d'identification qu'il utilisera désormais pour l'ensemble des services :
+ - un login
+ - un mot de passe
+ - un secret OTP
+
+Afin de limiter l'empreinte carbone de cette opération, comme chaque membre du
+personnel est équipé d'un téléphone professionnel dernier cri, nous
+n'utilisons pas de token physique. Il convient à chacun de configurer le
+logiciel OTP de son choix à l'aide des paramètres suivants :
+
+  algorithme : TOTP
+  hachage : SHA-256
+  time reference : epoch unix
+  time step : 225 secondes
+  chiffres : 8
+
+Pour s'authentifier, chaque utilisateur continue d'utiliser son login et
+remplace sur l'ensemble de nos services son ancien mot de passe par
+la concaténation du nouveau mot de passe et de la clé OTP calculée.
+
+Ainsi si la date est 2022-12-05 08:00:00 et que mes paramètres sont 
+alceste / pomme / INAUWRI=, alors la valeur du compteur est 7423216 et le
+résultat du calcul TOTP est 39379583, je me connecte avec le login alceste et
+le mot de passe pomme39379583.
+
+Pour nos utilisateurs les plus avancés, voici une implémentation de référence
+des fonctions TOTP : https://github.com/susam/mintotp
+
+Dans un souci de protection de l'ensemble des données personnelles, le
+courrier électronique est protégé par le même dispositif ainsi que le système
+d'archivage. Les archives de messagerie sont stockées dans des fichiers
+horodatés au format 7z, protégées par le mot de passe utilisateur à cette
+date. L'horodatage du fichier est au format %Y%m%d%H%M%S.
+
+N'hésitez pas à vous tourner vers notre plateforme de support en cas de
+difficulté de mise en œuvre.
+
+Attentifs, ensemble !
+RRRSNINPTGDLUESLNCSLCPND
